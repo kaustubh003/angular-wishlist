@@ -15,6 +15,7 @@
                 required.</small>
             <small class="text-danger" *ngIf="contactForm.get('senderEmail')?.hasError('email')">Please enter valid
                 email.</small>
+            <small class="text-danger" *ngIf="contactForm.get('senderEmail')?.hasError('invalidEmailDomain')">The email provider is not allowed.</small>    
         </div>
     </div>
     <div class="mb-3">
